@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" aria-hidden="true">
+  <defs>
+    <linearGradient id="ev-needle" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3d6650"/>
+      <stop offset="60%" stop-color="#1a3a2e"/>
+      <stop offset="100%" stop-color="#0e2218"/>
+    </linearGradient>
+    <linearGradient id="ev-trunk" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#2b1d09"/>
+      <stop offset="60%" stop-color="#5c4422"/>
+      <stop offset="100%" stop-color="#2b1d09"/>
+    </linearGradient>
+  </defs>
+  <!-- trunk -->
+  <path d="M108 264 L132 264 L130 296 L110 296 Z" fill="url(#ev-trunk)" stroke="#1a1108" stroke-width="1.2"/>
+  <!-- 5 tier layers, bottom to top, jagged silhouette -->
+  <g fill="url(#ev-needle)" stroke="#0e2218" stroke-width="1">
+    <!-- bottom widest -->
+    <path d="M30 264 L120 192 L210 264 L180 256 L200 268 L160 260 L170 274 L140 264 L120 280 L100 264 L70 274 L80 260 L40 268 L60 256 Z"/>
+    <!-- layer 4 -->
+    <path d="M44 232 L120 168 L196 232 L172 224 L188 236 L156 228 L164 240 L138 230 L120 246 L102 230 L76 240 L84 228 L52 236 L68 224 Z"/>
+    <!-- layer 3 -->
+    <path d="M58 196 L120 142 L182 196 L162 188 L174 200 L148 192 L154 204 L130 194 L120 208 L110 194 L86 204 L92 192 L66 200 L78 188 Z"/>
+    <!-- layer 2 -->
+    <path d="M74 156 L120 112 L166 156 L152 150 L160 160 L140 154 L144 164 L126 156 L120 168 L114 156 L96 164 L100 154 L80 160 L88 150 Z"/>
+    <!-- top -->
+    <path d="M92 116 L120 76 L148 116 L138 112 L142 120 L130 114 L132 124 L120 116 L108 124 L110 114 L98 120 L102 112 Z"/>
+    <!-- star tip -->
+    <path d="M120 76 L114 88 L108 84 L116 96 L120 104 L124 96 L132 84 L126 88 Z"/>
+  </g>
+  <!-- snow caps along each tier -->
+  <g fill="#f4ede0" opacity="0.92">
+    <path d="M44 264 Q70 256 96 262 Q120 268 144 262 Q170 256 196 264 L196 268 Q170 262 144 268 Q120 270 96 268 Q70 262 44 268 Z"/>
+    <path d="M64 230 Q92 222 116 228 Q140 232 168 222 L168 228 Q140 236 116 232 Q92 228 64 234 Z"/>
+    <path d="M76 192 Q98 184 120 188 Q142 192 162 184 L162 190 Q142 196 120 192 Q98 188 76 196 Z"/>
+    <path d="M86 152 Q104 146 122 150 Q140 154 156 148 L156 154 Q140 158 122 156 Q104 152 86 156 Z"/>
+    <path d="M100 114 Q116 108 124 110 Q132 112 140 108 L140 114 Q132 116 124 116 Q116 114 100 116 Z"/>
+  </g>
+  <!-- a few baubles -->
+  <g>
+    <circle cx="82" cy="248" r="5" fill="#c75450" stroke="#5a1816" stroke-width="0.8"/>
+    <circle cx="80.5" cy="246" r="1.2" fill="#fff" opacity="0.7"/>
+    <circle cx="158" cy="218" r="4" fill="#d4a857" stroke="#5c4422" stroke-width="0.8"/>
+    <circle cx="156.8" cy="216.5" r="1" fill="#fff" opacity="0.7"/>
+    <circle cx="106" cy="178" r="4" fill="#c75450" stroke="#5a1816" stroke-width="0.8"/>
+    <circle cx="138" cy="146" r="3.5" fill="#d4a857" stroke="#5c4422" stroke-width="0.8"/>
+  </g>
+  <!-- tiny lights / dots like fairy lights -->
+  <g fill="#ffb84d" opacity="0.85">
+    <circle cx="100" cy="220" r="1.5"/>
+    <circle cx="148" cy="200" r="1.5"/>
+    <circle cx="120" cy="158" r="1.5"/>
+    <circle cx="98" cy="142" r="1.4"/>
+    <circle cx="130" cy="124" r="1.4"/>
+    <circle cx="142" cy="240" r="1.5"/>
+  </g>
+</svg>

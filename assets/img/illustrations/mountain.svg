@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="none" aria-hidden="true">
+  <!-- back layer: distant pale peaks -->
+  <g class="layer layer-far">
+    <path d="M0 600 L0 460 L120 380 L220 420 L340 320 L470 380 L600 300 L720 350 L840 280 L960 340 L1080 270 L1200 330 L1320 290 L1440 350 L1600 320 L1600 600 Z" fill="#163558" opacity="0.7"/>
+    <!-- snow caps far -->
+    <g fill="#f4ede0" opacity="0.18">
+      <path d="M340 320 L360 332 L320 338 Z"/>
+      <path d="M600 300 L626 314 L578 320 Z"/>
+      <path d="M840 280 L862 294 L818 300 Z"/>
+      <path d="M1080 270 L1106 286 L1058 292 Z"/>
+      <path d="M1320 290 L1342 304 L1300 308 Z"/>
+    </g>
+  </g>
+  <!-- mid layer: medium silhouette -->
+  <g class="layer layer-mid">
+    <path d="M0 600 L0 480 L80 460 L180 420 L260 470 L380 380 L490 440 L580 360 L700 430 L820 340 L920 410 L1040 360 L1160 430 L1280 380 L1400 440 L1500 400 L1600 460 L1600 600 Z" fill="#0d2236"/>
+    <!-- snow caps mid -->
+    <g fill="#f4ede0" opacity="0.35">
+      <path d="M380 380 L400 392 L360 396 Z"/>
+      <path d="M580 360 L604 374 L558 378 Z"/>
+      <path d="M820 340 L844 354 L796 358 Z"/>
+      <path d="M1040 360 L1062 372 L1018 378 Z"/>
+      <path d="M1280 380 L1302 392 L1258 396 Z"/>
+    </g>
+    <!-- evergreen silhouettes on mid -->
+    <g fill="#0e2218">
+      <path d="M120 470 L128 446 L136 470 Z"/>
+      <path d="M148 478 L156 452 L164 478 Z"/>
+      <path d="M222 482 L230 458 L238 482 Z"/>
+      <path d="M450 466 L458 442 L466 466 Z"/>
+      <path d="M484 470 L492 444 L500 470 Z"/>
+      <path d="M772 442 L780 416 L788 442 Z"/>
+      <path d="M894 432 L902 408 L910 432 Z"/>
+      <path d="M1112 432 L1120 408 L1128 432 Z"/>
+      <path d="M1212 446 L1220 422 L1228 446 Z"/>
+      <path d="M1380 462 L1388 438 L1396 462 Z"/>
+    </g>
+  </g>
+  <!-- front layer: closest, darkest, with chalet & lift -->
+  <g class="layer layer-near">
+    <path d="M0 600 L0 530 L60 500 L160 520 L260 470 L360 510 L460 480 L580 520 L700 470 L840 530 L980 480 L1100 530 L1240 490 L1360 530 L1480 500 L1600 540 L1600 600 Z" fill="#060f1f"/>
+    <!-- snow on closest -->
+    <g fill="#f4ede0" opacity="0.6">
+      <path d="M60 500 L78 510 L42 514 Z"/>
+      <path d="M260 470 L286 482 L240 488 Z"/>
+      <path d="M460 480 L482 494 L438 498 Z"/>
+      <path d="M700 470 L728 484 L678 488 Z"/>
+      <path d="M980 480 L1008 496 L956 500 Z"/>
+      <path d="M1240 490 L1268 506 L1218 510 Z"/>
+      <path d="M1480 500 L1506 514 L1456 518 Z"/>
+    </g>
+    <!-- dense evergreens at base -->
+    <g fill="#0e2218">
+      <path d="M30 560 L40 524 L50 560 Z"/>
+      <path d="M70 568 L80 530 L90 568 Z"/>
+      <path d="M104 572 L112 540 L120 572 Z"/>
+      <path d="M180 558 L190 522 L200 558 Z"/>
+      <path d="M220 564 L228 532 L236 564 Z"/>
+      <path d="M340 552 L348 522 L356 552 Z"/>
+      <path d="M400 562 L408 530 L416 562 Z"/>
+      <path d="M520 548 L528 516 L536 548 Z"/>
+      <path d="M610 558 L618 528 L626 558 Z"/>
+      <path d="M740 540 L748 510 L756 540 Z"/>
+      <path d="M900 530 L908 502 L916 530 Z"/>
+      <path d="M1040 542 L1048 516 L1056 542 Z"/>
+      <path d="M1160 552 L1168 524 L1176 552 Z"/>
+      <path d="M1300 542 L1308 514 L1316 542 Z"/>
+      <path d="M1420 552 L1428 524 L1436 552 Z"/>
+      <path d="M1540 558 L1548 528 L1556 558 Z"/>
+    </g>
+    <!-- tiny chalet with warm window -->
+    <g transform="translate(620 478)">
+      <path d="M0 24 L20 8 L40 24 L40 50 L0 50 Z" fill="#3d2c14" stroke="#1a1108" stroke-width="1"/>
+      <path d="M-4 26 L20 6 L44 26 L40 30 L20 14 L0 30 Z" fill="#f4ede0" opacity="0.85"/>
+      <rect x="14" y="32" width="12" height="14" fill="#ffb84d" opacity="0.9"/>
+      <line x1="20" y1="32" x2="20" y2="46" stroke="#5c4422" stroke-width="0.8"/>
+      <line x1="14" y1="39" x2="26" y2="39" stroke="#5c4422" stroke-width="0.8"/>
+    </g>
+  </g>
+</svg>

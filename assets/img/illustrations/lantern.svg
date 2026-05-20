@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 240" aria-hidden="true">
+  <defs>
+    <radialGradient id="lt-flame" cx="50%" cy="55%" r="42%">
+      <stop offset="0%" stop-color="#fff7d6"/>
+      <stop offset="35%" stop-color="#ffd47a"/>
+      <stop offset="70%" stop-color="#ff9a1f"/>
+      <stop offset="100%" stop-color="#b85a0c" stop-opacity="0.7"/>
+    </radialGradient>
+    <radialGradient id="lt-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb84d" stop-opacity="0.65"/>
+      <stop offset="60%" stop-color="#ff9a1f" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff9a1f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lt-metal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#5c4422"/>
+      <stop offset="50%" stop-color="#d4a857"/>
+      <stop offset="100%" stop-color="#4a3416"/>
+    </linearGradient>
+  </defs>
+  <!-- ambient warm halo behind lantern -->
+  <ellipse cx="80" cy="130" rx="78" ry="92" fill="url(#lt-glow)"/>
+  <!-- hanging cord -->
+  <line x1="80" y1="0" x2="80" y2="32" stroke="#3d2c14" stroke-width="2"/>
+  <!-- top hook ring -->
+  <circle cx="80" cy="34" r="6" fill="none" stroke="url(#lt-metal)" stroke-width="2.4"/>
+  <!-- top hat / cap -->
+  <path d="M52 56 L80 38 L108 56 L108 64 L52 64 Z" fill="url(#lt-metal)" stroke="#2b1d09" stroke-width="1.2"/>
+  <rect x="58" y="64" width="44" height="6" rx="1" fill="#2b1d09"/>
+  <!-- frame uprights -->
+  <line x1="56" y1="70" x2="56" y2="178" stroke="#3d2c14" stroke-width="3"/>
+  <line x1="104" y1="70" x2="104" y2="178" stroke="#3d2c14" stroke-width="3"/>
+  <!-- glass panel (warm interior) -->
+  <rect x="58" y="72" width="44" height="104" rx="3" fill="#1c1004"/>
+  <ellipse cx="80" cy="124" rx="20" ry="36" fill="url(#lt-flame)"/>
+  <!-- candle inside -->
+  <rect x="76" y="138" width="8" height="28" rx="1.5" fill="#f4ede0" opacity="0.85"/>
+  <!-- flame shape -->
+  <path d="M80 110 C72 122 74 134 80 140 C86 134 88 122 80 110 Z" fill="#fff7d6"/>
+  <path d="M80 116 C76 122 78 130 80 134 C82 130 84 122 80 116 Z" fill="#ff9a1f"/>
+  <!-- subtle muntin / cross bars on glass -->
+  <line x1="58" y1="124" x2="102" y2="124" stroke="#d4a857" stroke-width="0.8" opacity="0.55"/>
+  <line x1="80" y1="72" x2="80" y2="176" stroke="#d4a857" stroke-width="0.8" opacity="0.45"/>
+  <!-- base -->
+  <path d="M48 178 L112 178 L108 196 L52 196 Z" fill="url(#lt-metal)" stroke="#2b1d09" stroke-width="1.2"/>
+  <rect x="56" y="196" width="48" height="6" rx="1" fill="#2b1d09"/>
+  <!-- snow caps top -->
+  <path d="M52 56 Q66 51 80 53 Q94 51 108 56 L108 60 Q90 56 80 58 Q70 56 52 60 Z" fill="#f4ede0" opacity="0.92"/>
+  <circle cx="62" cy="55" r="1.5" fill="#f4ede0"/>
+  <circle cx="98" cy="56" r="1.5" fill="#f4ede0"/>
+  <!-- snow drift on base -->
+  <path d="M48 196 Q60 192 80 194 Q100 192 112 196 L112 200 L48 200 Z" fill="#f4ede0" opacity="0.88"/>
+</svg>

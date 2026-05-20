@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <defs>
+    <radialGradient id="sf-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#sf-glow)"/>
+  <g stroke-width="2.2">
+    <!-- 6-axis main arms -->
+    <g>
+      <line x1="100" y1="14" x2="100" y2="186"/>
+      <line x1="25.5" y1="57" x2="174.5" y2="143"/>
+      <line x1="25.5" y1="143" x2="174.5" y2="57"/>
+    </g>
+    <!-- branches at axis tips and midpoints -->
+    <g stroke-width="1.8">
+      <!-- top arm -->
+      <path d="M100 32 L88 22 M100 32 L112 22"/>
+      <path d="M100 52 L91 44 M100 52 L109 44"/>
+      <path d="M100 72 L93 66 M100 72 L107 66"/>
+      <!-- bottom arm -->
+      <path d="M100 168 L88 178 M100 168 L112 178"/>
+      <path d="M100 148 L91 156 M100 148 L109 156"/>
+      <path d="M100 128 L93 134 M100 128 L107 134"/>
+      <!-- top-right diagonal -->
+      <path d="M141 78 L137 64 M141 78 L153 78"/>
+      <path d="M124 88 L121 78 M124 88 L133 88"/>
+      <!-- top-left diagonal -->
+      <path d="M59 78 L63 64 M59 78 L47 78"/>
+      <path d="M76 88 L79 78 M76 88 L67 88"/>
+      <!-- bottom-right diagonal -->
+      <path d="M141 122 L137 136 M141 122 L153 122"/>
+      <path d="M124 112 L121 122 M124 112 L133 112"/>
+      <!-- bottom-left diagonal -->
+      <path d="M59 122 L63 136 M59 122 L47 122"/>
+      <path d="M76 112 L79 122 M76 112 L67 112"/>
+    </g>
+    <!-- hexagonal center detail -->
+    <g stroke-width="1.5" opacity="0.85">
+      <path d="M100 84 L114 92 L114 108 L100 116 L86 108 L86 92 Z"/>
+      <circle cx="100" cy="100" r="3" fill="currentColor" stroke="none"/>
+      <circle cx="100" cy="100" r="9"/>
+    </g>
+    <!-- small accent crystals along axes -->
+    <g stroke-width="1" opacity="0.7">
+      <circle cx="100" cy="40" r="1.5" fill="currentColor" stroke="none"/>
+      <circle cx="100" cy="160" r="1.5" fill="currentColor" stroke="none"/>
+      <circle cx="38" cy="68" r="1.5" fill="currentColor" stroke="none"/>
+      <circle cx="162" cy="132" r="1.5" fill="currentColor" stroke="none"/>
+      <circle cx="38" cy="132" r="1.5" fill="currentColor" stroke="none"/>
+      <circle cx="162" cy="68" r="1.5" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+</svg>

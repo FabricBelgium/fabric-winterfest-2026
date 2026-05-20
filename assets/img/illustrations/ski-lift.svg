@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" aria-hidden="true">
+  <defs>
+    <linearGradient id="sl-pole" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#2b1d09"/>
+      <stop offset="50%" stop-color="#5c4422"/>
+      <stop offset="100%" stop-color="#2b1d09"/>
+    </linearGradient>
+  </defs>
+  <!-- background hills (very subtle) -->
+  <path d="M0 280 Q60 250 120 270 Q180 290 240 260 L240 320 L0 320 Z" fill="#0d2236" opacity="0.7"/>
+  <path d="M0 300 Q80 280 160 290 Q200 296 240 286 L240 320 L0 320 Z" fill="#060f1f" opacity="0.8"/>
+  <!-- snow ground -->
+  <path d="M0 295 Q60 290 120 294 Q180 298 240 290 L240 320 L0 320 Z" fill="#f4ede0" opacity="0.12"/>
+  <!-- tower / pylon -->
+  <line x1="120" y1="60" x2="120" y2="296" stroke="url(#sl-pole)" stroke-width="6" stroke-linecap="round"/>
+  <!-- cross arm -->
+  <line x1="60" y1="68" x2="180" y2="68" stroke="url(#sl-pole)" stroke-width="5"/>
+  <line x1="70" y1="78" x2="170" y2="78" stroke="url(#sl-pole)" stroke-width="3" opacity="0.7"/>
+  <!-- diagonal braces -->
+  <line x1="60" y1="68" x2="120" y2="98" stroke="#3d2c14" stroke-width="2.2"/>
+  <line x1="180" y1="68" x2="120" y2="98" stroke="#3d2c14" stroke-width="2.2"/>
+  <line x1="86" y1="68" x2="120" y2="108" stroke="#3d2c14" stroke-width="1.6" opacity="0.7"/>
+  <line x1="154" y1="68" x2="120" y2="108" stroke="#3d2c14" stroke-width="1.6" opacity="0.7"/>
+  <!-- pulley wheels -->
+  <circle cx="60" cy="68" r="6" fill="#d4a857" stroke="#2b1d09" stroke-width="1.5"/>
+  <circle cx="60" cy="68" r="2.4" fill="#2b1d09"/>
+  <circle cx="180" cy="68" r="6" fill="#d4a857" stroke="#2b1d09" stroke-width="1.5"/>
+  <circle cx="180" cy="68" r="2.4" fill="#2b1d09"/>
+  <!-- ground base -->
+  <rect x="106" y="294" width="28" height="8" fill="#2b1d09"/>
+  <path d="M104 294 L136 294 L132 304 L108 304 Z" fill="#3d2c14"/>
+  <!-- snow cap on cross arm -->
+  <path d="M58 66 Q90 60 120 62 Q150 60 182 66 L182 70 Q150 64 120 66 Q90 64 58 70 Z" fill="#f4ede0" opacity="0.9"/>
+  <!-- cable disappearing offscreen with passing chair -->
+  <line x1="-10" y1="78" x2="60" y2="68" stroke="#1a1108" stroke-width="1.6"/>
+  <line x1="180" y1="68" x2="250" y2="78" stroke="#1a1108" stroke-width="1.6"/>
+  <!-- chair -->
+  <g transform="translate(30 78)">
+    <line x1="0" y1="0" x2="0" y2="22" stroke="#3d2c14" stroke-width="1.8"/>
+    <rect x="-12" y="22" width="24" height="14" rx="2" fill="#c75450" stroke="#5a1816" stroke-width="1.2"/>
+    <rect x="-12" y="22" width="24" height="4" rx="1" fill="#e57975"/>
+    <line x1="-10" y1="36" x2="-10" y2="46" stroke="#3d2c14" stroke-width="1.4"/>
+    <line x1="10" y1="36" x2="10" y2="46" stroke="#3d2c14" stroke-width="1.4"/>
+    <line x1="-12" y1="46" x2="12" y2="46" stroke="#3d2c14" stroke-width="1.4"/>
+    <!-- snow on seat -->
+    <path d="M-11 22 Q0 20 11 22 L11 24 Q0 22 -11 24 Z" fill="#f4ede0" opacity="0.85"/>
+  </g>
+  <!-- distant evergreens -->
+  <g fill="#1a3a2e" opacity="0.85">
+    <path d="M20 280 L28 254 L36 280 Z"/>
+    <path d="M44 282 L52 250 L60 282 Z"/>
+    <path d="M188 282 L196 252 L204 282 Z"/>
+    <path d="M212 280 L218 258 L224 280 Z"/>
+  </g>
+  <g fill="#0e2218" opacity="0.9">
+    <path d="M14 286 L20 268 L26 286 Z"/>
+    <path d="M218 286 L223 270 L228 286 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-hidden="true">
+  <defs>
+    <linearGradient id="ps-needle" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3d6650"/>
+      <stop offset="100%" stop-color="#1a3a2e"/>
+    </linearGradient>
+    <radialGradient id="ps-berry" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#e57975"/>
+      <stop offset="55%" stop-color="#c75450"/>
+      <stop offset="100%" stop-color="#6e2421"/>
+    </radialGradient>
+  </defs>
+  <!-- central stem -->
+  <path d="M30 158 Q70 130 100 100 Q130 70 168 50" stroke="#4a3416" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- short side stems -->
+  <g stroke="#4a3416" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M58 138 Q50 124 45 116"/>
+    <path d="M58 138 Q70 124 78 122"/>
+    <path d="M82 116 Q72 102 68 92"/>
+    <path d="M82 116 Q94 104 102 102"/>
+    <path d="M118 86 Q108 74 102 64"/>
+    <path d="M118 86 Q130 76 138 76"/>
+    <path d="M145 64 Q138 50 134 42"/>
+    <path d="M145 64 Q156 56 162 56"/>
+  </g>
+  <!-- needles: pairs of slim diamonds along the stem -->
+  <g fill="url(#ps-needle)" stroke="#0e2218" stroke-width="0.6">
+    <!-- lowest cluster -->
+    <path d="M44 132 L48 116 L52 132 L48 148 Z"/>
+    <path d="M36 124 L30 110 L40 108 L46 124 Z"/>
+    <path d="M58 138 L70 132 L66 148 L54 152 Z"/>
+    <path d="M52 156 L62 154 L60 168 L48 168 Z"/>
+    <!-- mid cluster -->
+    <path d="M76 114 L82 100 L88 116 L82 130 Z"/>
+    <path d="M66 108 L60 92 L74 92 L80 106 Z"/>
+    <path d="M88 124 L100 122 L96 138 L84 140 Z"/>
+    <path d="M80 138 L92 138 L88 152 L78 150 Z"/>
+    <!-- upper-mid -->
+    <path d="M110 92 L116 78 L122 92 L116 106 Z"/>
+    <path d="M100 86 L94 70 L108 72 L114 84 Z"/>
+    <path d="M122 100 L134 96 L130 110 L120 114 Z"/>
+    <path d="M114 110 L126 110 L122 124 L112 124 Z"/>
+    <!-- upper -->
+    <path d="M138 72 L144 58 L150 72 L144 86 Z"/>
+    <path d="M128 64 L122 50 L136 50 L142 62 Z"/>
+    <path d="M152 80 L164 78 L160 90 L150 92 Z"/>
+    <!-- tip -->
+    <path d="M162 52 L168 38 L174 52 L168 64 Z"/>
+    <path d="M154 44 L148 30 L162 30 L168 42 Z"/>
+  </g>
+  <!-- berries -->
+  <circle cx="56" cy="148" r="5.5" fill="url(#ps-berry)" stroke="#5a1816" stroke-width="0.6"/>
+  <circle cx="63" cy="152" r="5" fill="url(#ps-berry)" stroke="#5a1816" stroke-width="0.6"/>
+  <circle cx="100" cy="118" r="4.5" fill="url(#ps-berry)" stroke="#5a1816" stroke-width="0.6"/>
+  <circle cx="136" cy="86" r="4.5" fill="url(#ps-berry)" stroke="#5a1816" stroke-width="0.6"/>
+  <!-- berry highlights -->
+  <circle cx="54.5" cy="146" r="1.2" fill="#fff" opacity="0.7"/>
+  <circle cx="61.5" cy="150" r="1.2" fill="#fff" opacity="0.7"/>
+  <circle cx="98.5" cy="116" r="1.1" fill="#fff" opacity="0.7"/>
+  <circle cx="134.5" cy="84" r="1.1" fill="#fff" opacity="0.7"/>
+  <!-- tiny snow specks on needles -->
+  <g fill="#f4ede0" opacity="0.85">
+    <circle cx="42" cy="118" r="1"/>
+    <circle cx="84" cy="106" r="1"/>
+    <circle cx="120" cy="96" r="1"/>
+    <circle cx="148" cy="62" r="1"/>
+    <circle cx="168" cy="46" r="1"/>
+  </g>
+</svg>

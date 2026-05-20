@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" aria-hidden="true">
+  <defs>
+    <linearGradient id="mc-mug" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f4ede0"/>
+      <stop offset="50%" stop-color="#d9d0c2"/>
+      <stop offset="100%" stop-color="#8a8270"/>
+    </linearGradient>
+    <linearGradient id="mc-liquid" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e57975"/>
+      <stop offset="60%" stop-color="#8a2e2a"/>
+      <stop offset="100%" stop-color="#3a1110"/>
+    </linearGradient>
+    <radialGradient id="mc-steam" cx="50%" cy="100%" r="80%">
+      <stop offset="0%" stop-color="#f4ede0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f4ede0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- steam (3 wisps) -->
+  <g fill="url(#mc-steam)" opacity="0.8">
+    <path d="M70 40 Q60 20 76 4 Q92 22 80 44 Z"/>
+    <path d="M96 30 Q88 12 104 -4 Q120 14 110 36 Z"/>
+    <path d="M122 42 Q116 22 132 6 Q146 24 134 46 Z"/>
+  </g>
+  <!-- mug body -->
+  <path d="M40 78 L160 78 L150 196 Q130 206 100 206 Q70 206 50 196 Z" fill="url(#mc-mug)" stroke="#5a4a30" stroke-width="2"/>
+  <!-- rim shadow -->
+  <ellipse cx="100" cy="78" rx="60" ry="10" fill="#3a3024" opacity="0.55"/>
+  <!-- liquid surface -->
+  <ellipse cx="100" cy="78" rx="56" ry="8" fill="url(#mc-liquid)" stroke="#3a1110" stroke-width="1"/>
+  <!-- mug handle -->
+  <path d="M160 96 C 188 100 188 156 160 162" fill="none" stroke="#5a4a30" stroke-width="6" stroke-linecap="round"/>
+  <path d="M160 96 C 184 100 184 156 160 160" fill="none" stroke="url(#mc-mug)" stroke-width="3" stroke-linecap="round"/>
+  <!-- decoration band -->
+  <rect x="46" y="120" width="108" height="8" fill="#c75450" stroke="#5a1816" stroke-width="0.6"/>
+  <!-- snowflake-pine motif on band -->
+  <g stroke="#f4ede0" stroke-width="1" fill="none">
+    <path d="M68 124 L66 122 M68 124 L70 122 M68 124 L66 126 M68 124 L70 126"/>
+    <path d="M100 124 L98 122 M100 124 L102 122 M100 124 L98 126 M100 124 L102 126"/>
+    <path d="M132 124 L130 122 M132 124 L134 122 M132 124 L130 126 M132 124 L134 126"/>
+    <path d="M84 124 L82 124 L86 124 M84 124 L84 122 L84 126"/>
+    <path d="M116 124 L114 124 L118 124 M116 124 L116 122 L116 126"/>
+  </g>
+  <!-- garnish on rim: cinnamon stick & star anise -->
+  <rect x="84" y="68" width="32" height="6" rx="1" fill="#5c4422" stroke="#2b1d09" stroke-width="0.8" transform="rotate(-12 100 71)"/>
+  <line x1="86" y1="71" x2="116" y2="71" stroke="#3d2c14" stroke-width="0.6" transform="rotate(-12 100 71)"/>
+  <!-- star anise -->
+  <g transform="translate(118 64)" fill="#8a4d20" stroke="#3d2c14" stroke-width="0.6">
+    <path d="M0 -6 L2 -2 L6 0 L2 2 L0 6 L-2 2 L-6 0 L-2 -2 Z"/>
+    <circle r="1.5" fill="#5c4422"/>
+  </g>
+  <!-- orange slice peeking -->
+  <circle cx="76" cy="76" r="5" fill="#ffb84d" stroke="#c97a1a" stroke-width="0.8"/>
+  <line x1="76" y1="71" x2="76" y2="81" stroke="#c97a1a" stroke-width="0.6"/>
+  <line x1="71" y1="76" x2="81" y2="76" stroke="#c97a1a" stroke-width="0.6"/>
+  <!-- mug highlight -->
+  <path d="M48 86 L52 190" stroke="#fff" stroke-width="2" opacity="0.35"/>
+  <!-- saucer -->
+  <ellipse cx="100" cy="208" rx="76" ry="8" fill="#5a4a30" stroke="#2b1d09" stroke-width="1"/>
+  <ellipse cx="100" cy="206" rx="74" ry="5" fill="url(#mc-mug)"/>
+</svg>
