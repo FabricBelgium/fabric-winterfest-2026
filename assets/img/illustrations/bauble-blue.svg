@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-hidden="true">
+  <defs>
+    <radialGradient id="bb-sphere" cx="38%" cy="30%" r="72%">
+      <stop offset="0%" stop-color="#8fd0ff"/>
+      <stop offset="42%" stop-color="#3a7bd5"/>
+      <stop offset="100%" stop-color="#14306e"/>
+    </radialGradient>
+    <linearGradient id="bb-cap" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7e08a"/>
+      <stop offset="50%" stop-color="#d4a857"/>
+      <stop offset="100%" stop-color="#9c6e1f"/>
+    </linearGradient>
+    <linearGradient id="bb-band" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#c0a44e"/>
+      <stop offset="50%" stop-color="#f4d35e"/>
+      <stop offset="100%" stop-color="#a9863a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- hanging string -->
+  <line x1="100" y1="2" x2="100" y2="30" stroke="#c9a14a" stroke-width="1.6"/>
+  <!-- top hook -->
+  <path d="M90 30 Q100 18 110 30" fill="none" stroke="url(#bb-cap)" stroke-width="3"/>
+  <!-- cap -->
+  <rect x="88" y="30" width="24" height="16" rx="3" fill="url(#bb-cap)" stroke="#7a5413" stroke-width="1"/>
+  <rect x="88" y="44" width="24" height="3.5" fill="#7a5413"/>
+
+  <!-- bauble sphere -->
+  <circle cx="100" cy="118" r="62" fill="url(#bb-sphere)" stroke="#0f2350" stroke-width="1.6"/>
+
+  <!-- decorative wavy band -->
+  <path d="M40 110 Q70 98 100 110 T160 110" fill="none" stroke="url(#bb-band)" stroke-width="6" stroke-linecap="round" opacity="0.95"/>
+  <path d="M42 132 Q70 144 100 132 T158 132" fill="none" stroke="#dbe9ff" stroke-width="3.5" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- silver/white dots -->
+  <g fill="#eaf3ff">
+    <circle cx="64" cy="150" r="3.2"/>
+    <circle cx="86" cy="160" r="3.2"/>
+    <circle cx="110" cy="160" r="3.2"/>
+    <circle cx="134" cy="150" r="3.2"/>
+  </g>
+
+  <!-- white snowflake accent -->
+  <g stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.95">
+    <line x1="100" y1="92" x2="100" y2="84"/>
+    <line x1="100" y1="84" x2="96" y2="80"/>
+    <line x1="100" y1="84" x2="104" y2="80"/>
+    <circle cx="100" cy="118" r="1.6" fill="#ffffff" stroke="none"/>
+  </g>
+
+  <!-- specular highlights -->
+  <ellipse cx="78" cy="96" rx="16" ry="10" fill="#ffffff" opacity="0.6" transform="rotate(-25 78 96)"/>
+  <ellipse cx="72" cy="90" rx="5" ry="3.5" fill="#ffffff" opacity="0.95"/>
+
+  <!-- soft shadow under -->
+  <ellipse cx="100" cy="188" rx="30" ry="5" fill="#000000" opacity="0.18"/>
+</svg>

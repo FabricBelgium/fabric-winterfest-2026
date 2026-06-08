@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-hidden="true">
+  <defs>
+    <linearGradient id="tc-foliage" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3ecf8e"/>
+      <stop offset="55%" stop-color="#1f9e6a"/>
+      <stop offset="100%" stop-color="#13794f"/>
+    </linearGradient>
+    <linearGradient id="tc-star" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff1b0"/>
+      <stop offset="50%" stop-color="#f4d35e"/>
+      <stop offset="100%" stop-color="#d4a857"/>
+    </linearGradient>
+    <linearGradient id="tc-trunk" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#7a5413"/>
+      <stop offset="100%" stop-color="#4d3309"/>
+    </linearGradient>
+  </defs>
+
+  <!-- trunk -->
+  <rect x="92" y="166" width="16" height="20" rx="2" fill="url(#tc-trunk)"/>
+
+  <!-- foliage tiers -->
+  <g fill="url(#tc-foliage)" stroke="#0f5e3d" stroke-width="1.4" stroke-linejoin="round">
+    <path d="M100 28 L132 78 L68 78 Z"/>
+    <path d="M100 64 L146 122 L54 122 Z"/>
+    <path d="M100 100 L160 170 L40 170 Z"/>
+  </g>
+
+  <!-- garland highlights -->
+  <g fill="none" stroke="#bdf5dc" stroke-width="1.6" stroke-linecap="round" opacity="0.7">
+    <path d="M76 74 Q100 86 124 74"/>
+    <path d="M64 118 Q100 132 136 118"/>
+    <path d="M52 166 Q100 182 148 166"/>
+  </g>
+
+  <!-- ornaments -->
+  <g stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.5">
+    <circle cx="100" cy="58" r="4.5" fill="#e23b3b"/>
+    <circle cx="86" cy="94" r="4.5" fill="#f4d35e"/>
+    <circle cx="116" cy="100" r="4.5" fill="#5b8def"/>
+    <circle cx="72" cy="136" r="5" fill="#e23b3b"/>
+    <circle cx="104" cy="146" r="5" fill="#f4d35e"/>
+    <circle cx="132" cy="138" r="5" fill="#c084fc"/>
+    <circle cx="60" cy="162" r="4.5" fill="#5b8def"/>
+    <circle cx="140" cy="160" r="4.5" fill="#e23b3b"/>
+  </g>
+
+  <!-- star on top -->
+  <g transform="translate(100 22)">
+    <path d="M0 -16 L4.7 -5.2 L16 -4.2 L7.4 3.2 L10 14.4 L0 8.4 L-10 14.4 L-7.4 3.2 L-16 -4.2 L-4.7 -5.2 Z"
+          fill="url(#tc-star)" stroke="#b8860b" stroke-width="1" stroke-linejoin="round"/>
+    <circle cx="0" cy="-1" r="2.4" fill="#fff7d6"/>
+  </g>
+</svg>

@@ -223,6 +223,13 @@ p {
   opacity: 0.7;
 }
 
+.eyebrow::after {
+  content: "❄";
+  margin-left: var(--space-2);
+  color: var(--snow-100);
+  opacity: 0.7;
+}
+
 .gradient-text {
   background: linear-gradient(135deg, var(--gold-300) 0%, var(--gold-500) 50%, var(--amber-300) 100%);
   -webkit-background-clip: text;
@@ -1215,7 +1222,29 @@ p {
 /* Track theming */
 .track-card.training { --track-color: var(--track-training); }
 .track-card.blue { --track-color: var(--track-blue); }
-.track-card.black { --track-color: var(--track-black); }
+.track-card.black { --track-color: #0c0c0c; }
+
+/* Black Slope card: black with a white neon outline so it stays legible */
+.track-card.black::before {
+  background: #0c0c0c;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+}
+
+.track-card.black .track-card-eyebrow,
+.track-card.black .arrow-link {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.track-card.black:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.45), 0 0 30px rgba(255, 255, 255, 0.18);
+}
+
+.track-card.black .ornament {
+  color: #0c0c0c;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.65));
+}
 
 /* ---- Recap strip (horizontal scroll) ---- */
 .recap-strip {
@@ -1310,7 +1339,7 @@ p {
   position: relative;
   padding: var(--space-10) var(--space-5);
   text-align: center;
-  background: linear-gradient(180deg, var(--navy-700) 0%, var(--navy-800) 100%);
+  background: linear-gradient(180deg, transparent 0%, var(--navy-700) 16%, var(--navy-800) 100%);
   overflow: hidden;
   isolation: isolate;
 }
@@ -1321,6 +1350,53 @@ p {
   inset: 0;
   z-index: -1;
   background: radial-gradient(ellipse at 50% 30%, rgba(255, 154, 31, 0.18), transparent 60%);
+}
+
+.register-lights {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 5%;
+  border-top: 1px solid rgba(212, 168, 87, 0.45);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.register-lights .bulb {
+  position: relative;
+  width: 10px;
+  height: 13px;
+  margin-top: 9px;
+  border-radius: 50% 50% 50% 50% / 42% 42% 58% 58%;
+  background: #f7e08a;
+  box-shadow: 0 0 9px 1px rgba(247, 224, 138, 0.7);
+}
+
+/* short stem connecting each bulb to the wire */
+.register-lights .bulb::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 1px;
+  height: 9px;
+  background: rgba(156, 110, 31, 0.85);
+  transform: translateX(-50%);
+}
+
+/* alternating warm tones */
+.register-lights .bulb:nth-child(3n + 2) {
+  background: #ffd36b;
+  box-shadow: 0 0 9px 1px rgba(255, 211, 107, 0.7);
+}
+
+.register-lights .bulb:nth-child(3n) {
+  background: #ffb347;
+  box-shadow: 0 0 9px 1px rgba(255, 179, 71, 0.7);
 }
 
 .register-band .wreath {
@@ -1547,6 +1623,77 @@ p {
   border-radius: 50%;
   background: var(--track-color);
   box-shadow: 0 0 10px var(--track-color);
+}
+
+/* ---- Black Slope: black accents with a white neon outline so they stay legible ---- */
+.t-black {
+  --track-color: #0c0c0c;
+}
+
+/* hero ambient glow → cool white instead of red */
+.page-hero.is-black::before {
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.1), transparent 60%),
+              radial-gradient(ellipse at top, var(--navy-700) 0%, var(--navy-800) 70%, var(--navy-900) 100%);
+}
+
+/* track pill */
+.t-black .track-banner {
+  background: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.85);
+  color: #fff;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+.t-black .track-banner .dot {
+  background: #0c0c0c;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* nav dropdown indicator dot */
+.dot--black {
+  background: #0c0c0c;
+  border: 1px solid #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+}
+
+/* timeline spine + node + time label */
+.t-black .timeline-item:not(:last-child)::before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), transparent);
+}
+
+.t-black .timeline-time {
+  color: #fff;
+}
+
+.t-black .timeline-time .dot {
+  background: #0c0c0c;
+  box-shadow: 0 0 14px #fff, 0 0 4px #fff;
+}
+
+.t-black .timeline-time .dot::after {
+  border-color: #fff;
+  opacity: 0.85;
+}
+
+/* session card left accent bar */
+.t-black .session-card::before {
+  background: #0c0c0c;
+  opacity: 1;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
+.t-black .session-card:hover {
+  border-color: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), -8px 0 24px rgba(255, 255, 255, 0.12);
+}
+
+/* speaker avatar */
+.t-black .speaker-avatar {
+  border-color: rgba(255, 255, 255, 0.85);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.22);
 }
 
 /* ---- Footer ---- */
