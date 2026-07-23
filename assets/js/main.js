@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Winterfest 2026 — main.js
+   Winterfest 2026 - main.js
    Lenis smooth scroll, GSAP reveals, Three.js snow (home hero only),
    nav scroll behavior, mobile drawer, scroll progress bar.
    ========================================================================== */

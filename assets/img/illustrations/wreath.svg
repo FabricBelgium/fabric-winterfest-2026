@@ -24,7 +24,7 @@
   <circle cx="120" cy="120" r="118" fill="url(#wr-glow)"/>
   <!-- base ring (faint shadow inside ring) -->
   <circle cx="120" cy="120" r="62" fill="none" stroke="#0e2218" stroke-width="2" opacity="0.5"/>
-  <!-- needle cluster — 18 radial diamond bundles forming the wreath -->
+  <!-- needle cluster: 18 radial diamond bundles forming the wreath -->
   <g fill="url(#wr-needle)" stroke="#0e2218" stroke-width="0.6">
     <!-- generate 18 clusters at 20deg increments -->
     <g transform="translate(120 120)">
