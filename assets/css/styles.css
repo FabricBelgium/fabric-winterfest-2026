@@ -1596,6 +1596,78 @@ p {
   margin-top: 2px;
 }
 
+/* ---- Call for speakers (track pages) ---- */
+.cfs {
+  position: relative;
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px dashed var(--glass-border-strong);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  /* .page-hero ends with var(--space-9) of padding. Claw back the difference on
+     top so the panel sits var(--space-8) below the intro text and the same
+     distance above the first timeslot. */
+  margin-top: calc(var(--space-8) - var(--space-9));
+  margin-bottom: var(--space-8);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.cfs::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at 12% 0%, rgba(255, 154, 31, 0.14), transparent 62%);
+}
+
+.cfs-body h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: var(--space-3);
+  color: var(--snow-100);
+}
+
+.cfs-body > p {
+  color: rgba(244, 237, 224, 0.78);
+  margin-bottom: var(--space-4);
+  max-width: 60ch;
+}
+
+.cfs-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  padding: 0;
+  list-style: none;
+}
+
+.cfs-topics li {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(244, 237, 224, 0.72);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--track-color, var(--gold-500)) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--track-color, var(--gold-500)) 38%, transparent);
+}
+
+.cfs-note {
+  margin-top: var(--space-4);
+  font-size: 0.85rem;
+  color: rgba(244, 237, 224, 0.5);
+}
+
+/* Black Slope: track colour is near-black, so lift the chips with a neon outline */
+.t-black .cfs-topics li {
+  background: rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.85);
+}
+
 /* Track-specific theming */
 .t-training { --track-color: var(--track-training); }
 .t-blue { --track-color: var(--track-blue); }
