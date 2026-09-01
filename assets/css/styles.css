@@ -1424,6 +1424,137 @@ p {
   color: rgba(244, 237, 224, 0.5);
 }
 
+/* ---- Ticket waves ---- */
+.wave-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-5);
+  max-width: 1040px;
+  margin: 0 auto var(--space-7);
+  padding: 0;
+  text-align: left;
+}
+
+.wave-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-5) var(--space-5);
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  transition: transform var(--t-med) var(--ease), border-color var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease);
+}
+
+.wave-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--glass-border-strong);
+  box-shadow: var(--shadow-card), var(--glow-gold);
+}
+
+.wave-card.is-live {
+  border-color: var(--glass-border-strong);
+  background: var(--glass-bg-strong);
+  box-shadow: var(--shadow-card), var(--glow-gold);
+}
+
+.wave-flag {
+  position: absolute;
+  top: 0;
+  left: var(--space-5);
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  color: rgba(244, 237, 224, 0.72);
+  background: var(--navy-700);
+  border: 1px solid var(--glass-border);
+}
+
+.wave-card.is-live .wave-flag {
+  color: var(--navy-900);
+  background: linear-gradient(135deg, var(--gold-500), var(--amber-300));
+  border-color: transparent;
+  font-weight: 600;
+}
+
+.wave-card.is-live .wave-flag::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--navy-900);
+}
+
+.wave-step {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold-300);
+}
+
+.wave-name {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.wave-price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(212, 168, 87, 0.18);
+}
+
+.wave-amount {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--gold-300);
+}
+
+.wave-options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+}
+
+.wave-options li {
+  position: relative;
+  padding-left: var(--space-5);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: rgba(244, 237, 224, 0.82);
+}
+
+.wave-options li::before {
+  content: "\2744";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--gold-500);
+  opacity: 0.75;
+}
+
 /* ---- Track timeline (track pages) ---- */
 .timeline {
   position: relative;
