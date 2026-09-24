@@ -60,8 +60,8 @@
     </div>
 
     <main id="main">
+      <div class="css-snow css-snow--page" data-flakes="70" aria-hidden="true"></div>
       <section class="page-hero is-black">
-        <div class="css-snow" aria-hidden="true"></div>
         <div class="container container--narrow">
           <div class="track-banner reveal">
             <span class="dot"></span>
@@ -79,97 +79,122 @@
 
       <section class="section" style="padding-top:0">
         <div class="container container--narrow">
-          <section class="cfs reveal" aria-labelledby="cfs-title">
-            <div class="cfs-body">
-              <span class="eyebrow">Call for speakers</span>
-              <h2 id="cfs-title">Know Fabric deeply? <span class="gradient-text">Take the mic</span></h2>
-              <p>Most of the Black Slope is still open, and this is the room for the hard parts: architecture decisions you had to defend, capacity and performance tuning, patterns that broke at scale, the platform edges nobody blogs about. Bring the detail &mdash; this audience already knows the basics.</p>
-              <ul class="cfs-topics">
-                <li>Architecture</li>
-                <li>Performance &amp; capacity</li>
-                <li>Scale &amp; cost</li>
-                <li>Deep dives</li>
-                <li>Anti-patterns</li>
-              </ul>
-              <a class="btn btn--primary" href="https://sessionize.com/fabricwinterfest-2026" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="6" height="12" x="9" y="2" rx="3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
-                Register as speaker
-              </a>
-              <p class="cfs-note">Submissions run through Sessionize. Sessions on this slope are 45 minutes.</p>
-            </div>
-          </section>
-
           <div class="timeline reveal-stagger">
             <article class="timeline-item">
               <div class="timeline-time"><span class="dot"></span>08:45</div>
               <div class="session-card">
                 <div class="session-meta"><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>15 min</span><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Black Slope</span></div>
                 <h3>Opening &amp; welcome</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker"><div class="speaker-avatar">TBA</div><div class="speaker-name">Speaker TBA<span class="speaker-sub">Track host</span></div></div>
+                <p>Kick-off of the Black Slope and a quick look at the day ahead.</p>
               </div>
             </article>
             <article class="timeline-item">
               <div class="timeline-time"><span class="dot"></span>09:00</div>
               <div class="session-card">
                 <div class="session-meta"><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Black Slope</span></div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker"><div class="speaker-avatar">TBA</div><div class="speaker-name">Speaker TBA<span class="speaker-sub">Senior engineer</span></div></div>
+                <h3>Exploring permission boundaries in Microsoft Fabric</h3>
+                <p class="session-summary">A walkthrough of the ways to grant item and data access in a Fabric lakehouse architecture, and how to build a least-privilege permission strategy that still works for business users.</p>
+                <details class="session-more">
+                  <summary>More info</summary>
+                  <p>Microsoft Fabric offers a wide range of options to define permissions for both item and data access, using different scopes of the platform. As options keep evolving, it's a challenge to determine a viable permission strategy that works for the use cases at hand, offers business users the flexibility they are looking for, and passes those dreaded security checks to be able to move to production.</p>                  
+                  <p>Focusing on a typical lakehouse architecture for data analysis using Microsoft Fabric, we'll explore the different options that exist to provide access to items and define data security rules. We'll discuss how these different options can impact business users, walking through pros and cons, and providing examples that are manageable and usable at scale. Above all, the guiding principle of least privileged access is our north star, making sure we do our part to keep company data safe.</p>                  
+                  <p>We'll tie personas and use cases to common data access patterns and assess how Microsoft Fabric can help us get the data closer to where the business user is, helping them to make better informed decisions using validated data.</p>                  
+                  <p>After wrapping up the walkthrough, people should feel informed about the different options that exist, empowered to make their own decisions based on their own use cases and requirements, and reassured that it really isn't that complicated as it seems.</p>                  
+                </details>
+                <div class="session-speaker"><div class="speaker-avatar">BDJ</div><div class="speaker-name">Benni De Jagere</div></div>
               </div>
             </article>
             <article class="timeline-item">
               <div class="timeline-time"><span class="dot"></span>10:15</div>
               <div class="session-card">
                 <div class="session-meta"><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Black Slope</span></div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker"><div class="speaker-avatar">TBA</div><div class="speaker-name">Speaker TBA<span class="speaker-sub">Senior engineer</span></div></div>
+                <h3>From Use Case to Custom Skill: Craft AI That Fits Your Fabric Project</h3>
+                <p class="session-summary">How Microsoft's built-in Power BI skills became tailored custom skills for real project needs, and how you can do the same, shown through a live demo.</p>
+                <details class="session-more">
+                  <summary>More info</summary>
+                  <p>When we started using Microsoft's built-in skills for building Power BI reports, this already led to a significant gain in time &amp; results. However, we realised it was not yet a perfect fit for our specific project needs. So we built our own, and the process taught us as much as the result.</p>                  
+                  <p>Designing a custom skill forces you to structure your thinking: which steps repeat, which decisions matter, which context needs to carry through every run. Inspired by Microsoft's skills (their structure, their patterns,...), we built on top of that foundation rather than starting from scratch. Faster than expected, and with best practices already baked in.</p>                  
+                  <p>The outcome: dedicated skills that standardise our delivery process, embed our methodology, and give every team member the right guidance automatically, from day one.</p>                  
+                  <p>In this session, we walk through that journey from hitting the limits of the built-in skills to shipping a tailored one and show you how to do the same for specific use cases through a live demo.</p>                  
+                </details>
+                <div class="session-speaker"><div class="speaker-avatar">MV</div><div class="speaker-name">Marie Vandecavey</div></div>
               </div>
             </article>
             <article class="timeline-item">
               <div class="timeline-time"><span class="dot"></span>11:15</div>
               <div class="session-card">
                 <div class="session-meta"><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Black Slope</span></div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker"><div class="speaker-avatar">TBA</div><div class="speaker-name">Speaker TBA<span class="speaker-sub">Senior engineer</span></div></div>
+                <h3>When Translytical Task Flow meets Fabric Data Function</h3>
+                <p class="session-summary">A demo-rich look at User Data Functions: write Python once, reuse it across Fabric, and trigger it straight from buttons in your Power BI reports.</p>
+                <details class="session-more">
+                  <summary>More info</summary>
+                  <p>User Data Functions in Fabric are Python functions which you can write once and then reuse in different Fabric items. These functions can modify data, call web services, or just do complex calculations.</p>                  
+                  <p>Once written, you can call these functions from Fabric Notebooks etc. But the most interesting use case is calling them from Power BI. A new type of action becomes available on buttons: Calling the Data Functions!</p>                  
+                  <p>In this demo-rich session, you will first learn how to develop User Data Functions, both for transforming data as well as accessing data. Afterwards you see how to invoke these user data functions in Fabric and how to link them with your Power BI reports.</p>                  
+                </details>
+                <div class="session-speaker"><div class="speaker-avatar">NJ</div><div class="speaker-name">Nico Jacobs</div></div>
               </div>
             </article>
             <article class="timeline-item">
               <div class="timeline-time"><span class="dot"></span>13:00</div>
               <div class="session-card">
                 <div class="session-meta"><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Black Slope</span></div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker"><div class="speaker-avatar">TBA</div><div class="speaker-name">Speaker TBA<span class="speaker-sub">Senior engineer</span></div></div>
+                <h3>Chat with Your Data: Choosing the Right Conversational BI Tool in the Microsoft Stack</h3>
+                <p class="session-summary">A practical comparison of Microsoft's conversational BI options, from Copilot in Power BI to Fabric Data Agent and Foundry, with a decision framework and an honest cost breakdown.</p>
+                <details class="session-more">
+                  <summary>More info</summary>
+                  <p>Microsoft offers more ways than ever to build a conversational BI experience: Copilot in Power BI, Fabric Data Agent, Fabric IQ, M365 Copilot Chat, Azure AI Foundry. Each has its place, but with overlapping features, different licensing models, and varying implementation complexity. Knowing which one to use, and where to build it, is far from obvious.</p>                  
+                  <p>In this session, we cut through the noise with a practical comparison of the full Microsoft Conversational BI landscape. We look at the stack from two angles: where you build your agent (Fabric Data Agent, Agent Builder, Foundry) and where your users consume it (M365 Copilot Chat, Power BI, Teams, custom apps). You'll leave with a clear decision framework to match tool to use case, an honest cost breakdown and a realistic view of where Microsoft is taking this: with Copilot in Power BI making way for M365 as the primary interface and the Fabric Data Agent rapidly maturing, the landscape is shifting fast.</p>                  
+                </details>
+                <div class="session-speaker"><div class="speaker-avatar">VJ</div><div class="speaker-name">Valentin Janclaes</div></div>
               </div>
             </article>
             <article class="timeline-item">
               <div class="timeline-time"><span class="dot"></span>14:00</div>
               <div class="session-card">
                 <div class="session-meta"><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Black Slope</span></div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker"><div class="speaker-avatar">TBA</div><div class="speaker-name">Speaker TBA<span class="speaker-sub">Senior engineer</span></div></div>
+                <h3>Fabric Capacities: The Administrator's Guide</h3>
+                <p class="session-summary">An administrator's deep dive into bursting, smoothing, throttling, monitoring, cost optimization and sizing, so one runaway query never throttles your whole organization.</p>
+                <details class="session-more">
+                  <summary>More info</summary>
+                  <p>Fabric Capacities are deceptively simple to provision, but one runaway query can throttle your entire organization. This session is the administrator's deep dive into bursting, smoothing, overage debt, throttling, and the governance levers that keep workloads in check. We cover monitoring with the Capacity Metrics App and Real-Time Hub, cost optimization with reservations and autoscale billing, Spark and SQL Database governance, and practical sizing workflows to go from proof of concept to scaled adoption.</p>                  
+                </details>
+                <div class="session-speaker"><div class="speaker-avatar">SD</div><div class="speaker-name">Sam Debruyn</div></div>
               </div>
             </article>
             <article class="timeline-item">
               <div class="timeline-time"><span class="dot"></span>15:15</div>
               <div class="session-card">
                 <div class="session-meta"><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Black Slope</span></div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker"><div class="speaker-avatar">TBA</div><div class="speaker-name">Speaker TBA<span class="speaker-sub">Senior engineer</span></div></div>
+                <h3>Forget the Enterprise: a pragmatic Fabric architecture for SMEs</h3>
+                <p class="session-summary">A lean, pragmatic Fabric architecture for small and medium-sized organisations: small teams, low costs on F2 or F4, and lessons from real client projects.</p>
+                <details class="session-more">
+                  <summary>More info</summary>
+                  <p>If you've seen Fabric demos lately, you'd think it only works for massive enterprises. You know the type: global organisations with 50-person data teams, Data Mesh diagrams that look like London Underground maps, and enough F64 capacities to burn through a few mortgages' worth of cloud spend each year.</p>                  
+                  <p>But here's the good news: Fabric is not just for them.</p>                  
+                  <p>In this session, we ditch the enterprise fantasy and show you how to design a lean, pragmatic Fabric architecture tailored to small and medium-sized organisations. Companies that want value fast, who don't have a Centre of Excellence, and definitely aren't hiring a Data Steward anytime soon.</p>                  
+                  <p>We'll walk through:<br />1) A minimal-but-scalable Fabric setup that works for teams of 1 to 5<br />2) Smart defaults and architecture patterns that prioritise delivery over dogma<br />3) Keeping costs low; yes, Fabric can run fine on just F2 or F4<br />4) Real-world examples from actual client projects (the good, the bad, and the duct-taped)</p>                  
+                  <p>This session is opinionated, practical, and built for the 80% of us who live outside enterprise walls. If you're working with SMB clients (or are one) this talk will give you the tools and confidence to get started with Fabric your way.</p>                  
+                  <p>Takeaways:<br />- A ready-to-apply blueprint for a small-scale Fabric data platform<br />- Lessons from real-world SME implementations<br />- What to ignore from those flashy demos, and what actually matters</p>                  
+                  <p>Forget the enterprise. It's time to build something pragmatic.</p>                  
+                </details>
+                <div class="session-speaker"><div class="speaker-avatar">BL</div><div class="speaker-name">Bas Land</div></div>
               </div>
             </article>
             <article class="timeline-item">
               <div class="timeline-time"><span class="dot"></span>16:15</div>
               <div class="session-card">
                 <div class="session-meta"><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span><span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Black Slope</span></div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker"><div class="speaker-avatar">TBA</div><div class="speaker-name">Speaker TBA<span class="speaker-sub">Senior engineer</span></div></div>
+                <h3>Securing Microsoft Fabric with Private Link</h3>
+                <p class="session-summary">How Private Link works in Fabric at tenant and workspace level, how to set it up, and what it means for developer workflows, DevOps and architecture.</p>
+                <details class="session-more">
+                  <summary>More info</summary>
+                  <p>Data Security has never been as important as now, and organizations need clarity on how to apply it effectively on a modern data platform. This session will explain how Private Link works in Microsoft Fabric. The different types: tenant level and workspace level, will be covered, and the pros and cons will be shared.</p>                  
+                  <p>After a theoretical introduction, we will dive into a practical approach, how the setup works, what the consequences are of implementing Private Link, and what hurdles you might be running into.</p>                  
+                  <p>Throughout the session, the challenges, limitations, and opportunities will be discussed, and tips &amp; tricks will be shared. This might include impact on developer workflows, DevOps practices, general architecture, and more.</p>                  
+                  <p>By the end of the session, attendees should have a clear overview of the functionalities and limitations of Private Link, and will have seen the practical implementation of Private Link. This session is intended for Data Architects, Data Engineers with a security interest, and others who are interested in security for Microsoft Fabric.</p>                  
+                </details>
+                <div class="session-speaker"><div class="speaker-avatar">OVS</div><div class="speaker-name">Olivier Van Steenlandt</div></div>
               </div>
             </article>
           </div>

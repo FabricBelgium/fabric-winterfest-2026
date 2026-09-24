@@ -899,14 +899,15 @@ p {
   background: radial-gradient(ellipse at 50% 0%, var(--navy-600) 0%, var(--navy-800) 60%, var(--navy-900) 100%);
 }
 
+/* Track heroes fade into the page so the full-page snow runs through without a seam */
 .page-hero.is-training::before {
   background: radial-gradient(ellipse at 50% 0%, rgba(232, 161, 85, 0.16), transparent 60%),
-              radial-gradient(ellipse at top, var(--navy-700) 0%, var(--navy-800) 70%, var(--navy-900) 100%);
+              radial-gradient(ellipse at top, rgba(13, 34, 54, 0.7) 0%, transparent 70%);
 }
 
 .page-hero.is-blue::before {
   background: radial-gradient(ellipse at 50% 0%, rgba(122, 184, 212, 0.18), transparent 60%),
-              radial-gradient(ellipse at top, var(--navy-700) 0%, var(--navy-800) 70%, var(--navy-900) 100%);
+              radial-gradient(ellipse at top, rgba(13, 34, 54, 0.7) 0%, transparent 70%);
 }
 
 .page-hero.is-black::before {
@@ -932,6 +933,11 @@ p {
   overflow: hidden;
   pointer-events: none;
   z-index: -1;
+}
+
+/* Full-page variant: stays in view while scrolling, behind the content */
+.css-snow--page {
+  position: fixed;
 }
 
 .css-snow span {
@@ -1727,6 +1733,58 @@ p {
   margin-top: 2px;
 }
 
+/* Collapsible full session description */
+.session-more {
+  margin-bottom: var(--space-3);
+}
+
+.session-more summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--track-color, var(--gold-500));
+  margin-bottom: var(--space-3);
+}
+
+.session-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.session-more summary::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform var(--t-med) var(--ease);
+}
+
+.session-more[open] summary::after {
+  transform: translateY(1px) rotate(-135deg);
+}
+
+.session-more summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.session-more summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.t-black .session-more summary {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 /* ---- Call for speakers (track pages) ---- */
 .cfs {
   position: relative;
@@ -1833,10 +1891,11 @@ p {
   --track-color: #0c0c0c;
 }
 
-/* hero ambient glow → cool white instead of red */
+/* hero ambient glow → cool white instead of red; fades into the page so the
+   full-page snow runs through without a seam under the hero */
 .page-hero.is-black::before {
   background: radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.1), transparent 60%),
-              radial-gradient(ellipse at top, var(--navy-700) 0%, var(--navy-800) 70%, var(--navy-900) 100%);
+              radial-gradient(ellipse at top, rgba(13, 34, 54, 0.7) 0%, transparent 70%);
 }
 
 /* track pill */

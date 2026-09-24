@@ -269,7 +269,7 @@
   /* ---- CSS snow particle injection (subpages) ---- */
   document.querySelectorAll('.css-snow').forEach((host) => {
     if (reduced) return;
-    const flakes = 30;
+    const flakes = Number(host.dataset.flakes) || 30;
     const frag = document.createDocumentFragment();
     for (let i = 0; i < flakes; i++) {
       const s = document.createElement('span');
