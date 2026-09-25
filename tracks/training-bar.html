@@ -3,293 +3,181 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#0a1628" />
     <title>Training Bar | Winterfest 2026</title>
     <meta name="description" content="The Training Bar at Winterfest 2026: a full day of hands-on Microsoft Fabric training, designed for people getting started with the platform." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <meta name="theme-color" content="#03090f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Training Bar | Winterfest 2026" />
+    <meta property="og:description" content="The Training Bar at Winterfest 2026: a full day of hands-on Microsoft Fabric training, designed for people getting started with the platform." />
+    <meta property="og:image" content="https://fabricwinterfest.be/assets/img/og-image.jpg" />
+    <meta property="og:url" content="https://fabricwinterfest.be/tracks/training-bar.html" />
+    <link rel="preload" href="../assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../assets/css/site.css" />
     <link rel="icon" type="image/png" href="../assets/img/logo/Fabric%20Belgium%20logo.png" />
   </head>
-  <body class="t-training">
+  <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <canvas class="aurora aurora--page" data-edge="0.6" data-amp="1.1" data-scroll="1" aria-hidden="true"></canvas>
 
-    <header class="site-header is-scrolled" id="siteHeader">
-      <div class="nav-inner">
+    <header class="site-header">
+      <div class="wrap header-inner">
         <a class="brand" href="../index.html" aria-label="Fabric Winterfest 2026 home">
-          <img class="brand-mark" src="../assets/img/logo/Fabric%20Belgium%20logo.png" alt="Fabric Belgium" />
-          <span class="brand-text">
-            <span class="brand-name">Fabric Winterfest 2026</span>
-            <span class="brand-sub">Fabric Belgium · 4 Dec</span>
-          </span>
+          <img src="../assets/img/logo/Fabric%20Belgium%20logo.png" alt="" width="30" height="30" />
+          <span class="brand-name">Winterfest 2026</span>
         </a>
-        <nav aria-label="Primary">
-          <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-haspopup="true">
-                Tracks
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        <button class="nav-link menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-icons="../assets/img/icons.svg">
+          <span class="sr-only">Menu</span>
+          <svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-list"></use></svg>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li class="nav-program">
+              <button class="nav-link" type="button" aria-expanded="false" aria-controls="program-menu">
+                Program <svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-caret-down"></use></svg>
               </button>
-              <div class="nav-dropdown-menu" role="menu">
-                <a href="training-bar.html" role="menuitem" class="is-active"><span class="dot dot--training"></span>Training Bar</a>
-                <a href="blue-slope.html" role="menuitem"><span class="dot dot--blue"></span>Blue Slope</a>
-                <a href="black-slope.html" role="menuitem"><span class="dot dot--black"></span>Black Slope</a>
+              <div class="program-menu" id="program-menu" hidden>
+                <a href="../tracks/training-bar.html" aria-current="page"><span class="slope-badge slope-badge--training" aria-hidden="true"><svg class="slope-icon"><use href="../assets/img/icons.svg#i-slope-1"></use></svg></span>Training Bar</a>
+                <a href="../tracks/blue-slope.html"><span class="slope-badge slope-badge--blue" aria-hidden="true"><svg class="slope-icon"><use href="../assets/img/icons.svg#i-slope-2"></use></svg></span>Blue Slope</a>
+                <a href="../tracks/black-slope.html"><span class="slope-badge slope-badge--black" aria-hidden="true"><svg class="slope-icon"><use href="../assets/img/icons.svg#i-slope-3"></use></svg></span>Black Slope</a>
               </div>
             </li>
-            <li><a href="../index.html#partners">Partners</a></li>
-            <li><a href="../index.html#practicals">Practicals</a></li>
-            <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../contact.html">Contact</a></li>
+            <li><a class="nav-link" href="../practical.html">Practical info</a></li>
+            <li><a class="nav-link" href="../partners.html">Partners</a></li>
+            <li><a class="nav-link" href="../contact.html">Contact</a></li>
           </ul>
+          <a class="btn btn--primary btn--small" href="https://weeztix.shop/xq3nq9kq" target="_blank" rel="noopener">Get tickets</a>
         </nav>
-        <a class="nav-cta" href="../index.html#register">Register</a>
-        <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="mobileNav">
-          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-        </button>
       </div>
     </header>
 
-    <div class="mobile-nav" id="mobileNav">
-      <a href="../index.html">Home</a>
-      <span class="group-label">Tracks</span>
-      <a href="training-bar.html" class="sub-link">Training Bar</a>
-      <a href="blue-slope.html" class="sub-link">Blue Slope</a>
-      <a href="black-slope.html" class="sub-link">Black Slope</a>
-      <a href="../index.html#partners">Partners</a>
-      <a href="../index.html#practicals">Practicals</a>
-      <a href="../faq.html">FAQ</a>
-      <a href="../contact.html">Contact</a>
-      <a class="nav-cta" href="../index.html#register">Register</a>
-    </div>
-
     <main id="main">
-      <div class="css-snow css-snow--page" data-flakes="70" aria-hidden="true"></div>
-      <section class="page-hero is-training">
-        <div class="container container--narrow">
-          <div class="track-banner reveal">
-            <span class="dot"></span>
-            <span>Track · Training Bar · Beginner</span>
-          </div>
-          <h1 class="reveal">Get hands-on with <span class="gradient-text">Microsoft Fabric</span></h1>
-          <p class="reveal">A full-day, guided training for people getting started with Fabric. Storage, ingestion, transformations, semantic models, Power BI, DirectLake. All in one focused day. Bring a laptop, leave with a working pipeline.</p>
-          <div class="hero-chips reveal" style="justify-content:center;margin-top:2rem">
-            <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 08:45 - 17:00</span>
-            <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> Training Bar room</span>
-            <span class="hero-chip">For newcomers</span>
-          </div>
-        </div>
-      </section>
 
-      <section class="section" style="padding-top:0">
-        <div class="container container--narrow">
-          <div class="timeline reveal-stagger">
-            <article class="timeline-item">
-              <div class="timeline-time"><span class="dot"></span>08:45</div>
-              <div class="session-card">
-                <div class="session-meta">
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>15 min</span>
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Training Bar</span>
-                </div>
-                <h3>Welcome &amp; first run</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker">
-                  <div class="speaker-avatar">TBA</div>
-                  <div class="speaker-name">Speaker TBA<span class="speaker-sub">Track host</span></div>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-time"><span class="dot"></span>09:00</div>
-              <div class="session-card">
-                <div class="session-meta">
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span>
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Training Bar</span>
-                </div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker">
-                  <div class="speaker-avatar">TBA</div>
-                  <div class="speaker-name">Speaker TBA<span class="speaker-sub">Trainer</span></div>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-time"><span class="dot"></span>10:15</div>
-              <div class="session-card">
-                <div class="session-meta">
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span>
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Training Bar</span>
-                </div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker">
-                  <div class="speaker-avatar">TBA</div>
-                  <div class="speaker-name">Speaker TBA<span class="speaker-sub">Trainer</span></div>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-time"><span class="dot"></span>11:15</div>
-              <div class="session-card">
-                <div class="session-meta">
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span>
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Training Bar</span>
-                </div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker">
-                  <div class="speaker-avatar">TBA</div>
-                  <div class="speaker-name">Speaker TBA<span class="speaker-sub">Trainer</span></div>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-time"><span class="dot"></span>13:00</div>
-              <div class="session-card">
-                <div class="session-meta">
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>105 min</span>
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Training Bar</span>
-                </div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker">
-                  <div class="speaker-avatar">TBA</div>
-                  <div class="speaker-name">Speaker TBA<span class="speaker-sub">Trainer</span></div>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-time"><span class="dot"></span>15:15</div>
-              <div class="session-card">
-                <div class="session-meta">
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span>
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Training Bar</span>
-                </div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker">
-                  <div class="speaker-avatar">TBA</div>
-                  <div class="speaker-name">Speaker TBA<span class="speaker-sub">Trainer</span></div>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-time"><span class="dot"></span>16:15</div>
-              <div class="session-card">
-                <div class="session-meta">
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</span>
-                  <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Training Bar</span>
-                </div>
-                <h3>Coming soon</h3>
-                <p>Session description coming soon. Check back closer to the event for details on what this session will cover.</p>
-                <div class="session-speaker">
-                  <div class="speaker-avatar">TBA</div>
-                  <div class="speaker-name">Speaker TBA<span class="speaker-sub">Track host</span></div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div style="text-align:center;margin-top:4rem" class="reveal">
-            <a class="btn btn--primary" href="../index.html#register">Save your seat</a>
+      <section class="page-head track--training" aria-labelledby="track-title">
+        <div class="wrap">
+          <nav class="slope-switch" aria-label="Slopes">
+          <a href="training-bar.html" aria-current="page"><span class="slope-badge slope-badge--training" aria-hidden="true"><svg class="slope-icon"><use href="../assets/img/icons.svg#i-slope-1"></use></svg></span>Training Bar</a>
+          <a href="blue-slope.html"><span class="slope-badge slope-badge--blue" aria-hidden="true"><svg class="slope-icon"><use href="../assets/img/icons.svg#i-slope-2"></use></svg></span>Blue Slope</a>
+          <a href="black-slope.html"><span class="slope-badge slope-badge--black" aria-hidden="true"><svg class="slope-icon"><use href="../assets/img/icons.svg#i-slope-3"></use></svg></span>Black Slope</a>
+          </nav>
+          <div class="track-grid">
+            <div>
+              <h1 id="track-title" class="track-title"><span class="slope-badge slope-badge--training" aria-hidden="true"><svg class="slope-icon"><use href="../assets/img/icons.svg#i-slope-1"></use></svg></span>Training Bar</h1>
+              <p class="track-tagline">Get hands-on with Microsoft Fabric</p>
+              <p class="lede">A full-day, guided training for people getting started with Fabric. Storage, ingestion, transformations, semantic models, Power BI, DirectLake. All in one focused day. Bring a laptop, leave with a working pipeline.</p>
+              <ul class="track-facts">
+              <li><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-clock"></use></svg><span class="num">08:45 - 17:00</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-map-pin"></use></svg><span>Training Bar room</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-users-three"></use></svg><span>For newcomers</span></li>
+              </ul>
+            </div>
+            <figure class="track-photo"><img src="../assets/img/photos/web/event-39-1600.webp" srcset="../assets/img/photos/web/event-39-800.webp 800w, ../assets/img/photos/web/event-39-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 40vw" width="1600" height="1200" fetchpriority="high" alt="Attendees following a session on their laptops" /></figure>
           </div>
         </div>
       </section>
 
-      <section class="section" style="padding-top:0">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="eyebrow">Other slopes</span>
-            <h2>Not your speed?</h2>
+      <section class="section section--tight track--training" aria-labelledby="schedule-title">
+        <div class="wrap">
+          <div class="schedule-head">
+            <h2 id="schedule-title">Schedule</h2>
+            <p class="muted">Friday 4 December 2026 &middot; Training Bar room</p>
           </div>
-          <div class="tracks-grid reveal-stagger">
-            <a class="track-card blue" href="blue-slope.html">
-              <span class="track-card-eyebrow">Blue Slope</span>
-              <h3>Real-world cases</h3>
-              <p>Belgian customer stories: what they built on Fabric and what they learned. Comfortable pace.</p>
-              <span class="arrow-link">View the program <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-              <div class="ornament"><img src="../assets/img/illustrations/bauble-blue.svg" alt="" /></div>
-            </a>
-            <a class="track-card black" href="black-slope.html">
-              <span class="track-card-eyebrow">Black Slope</span>
-              <h3>Deep technical</h3>
-              <p>Advanced architecture and performance. For teams already living in Fabric.</p>
-              <span class="arrow-link">View the program <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-              <div class="ornament"><img src="../assets/img/illustrations/ornament.svg" alt="" /></div>
-            </a>
+          <ol class="schedule">
+          <li class="slot slot--tba">
+            <p class="slot-time num"><time>08:45</time><small>15 min</small></p>
+            <p class="tba"><strong>Welcome &amp; first run</strong>, speaker to be announced<span class="muted"> &middot; Track host</span></p>
+          </li>
+          <li class="slot slot--tba">
+            <p class="slot-time num"><time>09:00</time><small>45 min</small></p>
+            <p class="tba"><strong>To be announced</strong><span class="muted"> &middot; Trainer</span></p>
+          </li>
+          <li class="slot slot--tba">
+            <p class="slot-time num"><time>10:15</time><small>45 min</small></p>
+            <p class="tba"><strong>To be announced</strong><span class="muted"> &middot; Trainer</span></p>
+          </li>
+          <li class="slot slot--tba">
+            <p class="slot-time num"><time>11:15</time><small>45 min</small></p>
+            <p class="tba"><strong>To be announced</strong><span class="muted"> &middot; Trainer</span></p>
+          </li>
+          <li class="slot slot--tba">
+            <p class="slot-time num"><time>13:00</time><small>105 min</small></p>
+            <p class="tba"><strong>To be announced</strong><span class="muted"> &middot; Trainer</span></p>
+          </li>
+          <li class="slot slot--tba">
+            <p class="slot-time num"><time>15:15</time><small>45 min</small></p>
+            <p class="tba"><strong>To be announced</strong><span class="muted"> &middot; Trainer</span></p>
+          </li>
+          <li class="slot slot--tba">
+            <p class="slot-time num"><time>16:15</time><small>45 min</small></p>
+            <p class="tba"><strong>To be announced</strong><span class="muted"> &middot; Track host</span></p>
+          </li>
+          </ol>
+          <div class="track-cta">
+            <p>Tickets are released in three waves: the earlier you book, the less you pay.</p>
+            <a class="btn btn--primary" href="https://weeztix.shop/xq3nq9kq" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-ticket"></use></svg><span>Get tickets</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" aria-labelledby="others-title">
+        <div class="wrap">
+          <h2 id="others-title">Not your speed?</h2>
+          <div class="other-slopes">
+          <a class="other-slope" href="blue-slope.html">
+            <span class="piste-name"><span class="slope-badge slope-badge--blue" aria-hidden="true"><svg class="slope-icon"><use href="../assets/img/icons.svg#i-slope-2"></use></svg></span>Blue Slope</span>
+            <h3>Real-world cases</h3>
+            <p>Belgian customer stories: what they built on Fabric and what they learned. Comfortable pace.</p>
+            <span class="link-arrow">View the program <svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow-right"></use></svg></span>
+          </a>
+          <a class="other-slope" href="black-slope.html">
+            <span class="piste-name"><span class="slope-badge slope-badge--black" aria-hidden="true"><svg class="slope-icon"><use href="../assets/img/icons.svg#i-slope-3"></use></svg></span>Black Slope</span>
+            <h3>Deep technical</h3>
+            <p>Advanced architecture and performance. For teams already living in Fabric.</p>
+            <span class="link-arrow">View the program <svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow-right"></use></svg></span>
+          </a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-evergreen" aria-hidden="true">
-        <img src="../assets/img/illustrations/evergreen.svg" alt="" />
-      </div>
-      <div class="container">
+      <div class="wrap">
         <div class="footer-grid">
-          <div class="footer-col">
-            <a class="brand" href="../index.html"><img class="brand-mark" src="../assets/img/logo/Fabric%20Belgium%20logo.png" alt="Fabric Belgium" /><span class="brand-text"><span class="brand-name">Fabric Winterfest 2026</span><span class="brand-sub">Fabric Belgium</span></span></a>
-            <p class="footer-brand-tagline">The largest Microsoft Fabric community event in Belgium.</p>
-            <p class="footer-event-detail">4 December 2026 · SnowWorld Antwerpen</p>
+          <div>
+            <a class="brand" href="../index.html">
+              <img src="../assets/img/logo/Fabric%20Belgium%20logo.png" alt="" width="30" height="30" />
+              <span class="brand-name">Fabric Winterfest 2026</span>
+            </a>
+            <p>The largest Microsoft Fabric community event in Belgium.<br />4 December 2026, SnowWorld Antwerpen.</p>
           </div>
-          <div class="footer-col">
-            <h4>Event</h4>
+          <div>
+            <h2>Event</h2>
             <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../index.html#practicals">Practicals</a></li>
-              <li><a href="training-bar.html">Training Bar</a></li>
-              <li><a href="blue-slope.html">Blue Slope</a></li>
-              <li><a href="black-slope.html">Black Slope</a></li>
-              <li><a href="../faq.html">FAQ</a></li>
+              <li><a href="../tracks/training-bar.html">Training Bar</a></li>
+              <li><a href="../tracks/blue-slope.html">Blue Slope</a></li>
+              <li><a href="../tracks/black-slope.html">Black Slope</a></li>
+              <li><a href="../practical.html">Practical info &amp; FAQ</a></li>
+              <li><a href="../partners.html">Partners</a></li>
               <li><a href="../code-of-conduct.html">Code of Conduct</a></li>
               <li><a href="../privacy.html">Privacy Policy</a></li>
             </ul>
           </div>
-          <div class="footer-col">
-            <h4>More</h4>
+          <div>
+            <h2>More</h2>
             <ul>
-              <li><a href="https://www.fabricbelgium.be/" target="_blank" rel="noopener">Fabric Belgium <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></li>
+              <li><a href="https://www.fabricbelgium.be/" target="_blank" rel="noopener">Fabric Belgium</a></li>
               <li><a href="../contact.html">Contact</a></li>
-              <li><a href="../index.html#register">Register</a></li>
+              <li><a href="https://weeztix.shop/xq3nq9kq" target="_blank" rel="noopener">Get tickets</a></li>
             </ul>
           </div>
         </div>
-        <div class="footer-divider" aria-hidden="true" style="color: var(--gold-500)">
-          <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="30" x2="1200" y2="30" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
-            <g stroke="currentColor" stroke-width="1" fill="none" opacity="0.7">
-              <g transform="translate(120 30)"><line x1="0" y1="0" x2="0" y2="14"/><rect x="-9" y="14" width="18" height="9" rx="1.5" fill="currentColor" opacity="0.85"/><line x1="-7" y1="23" x2="-7" y2="30"/><line x1="7" y1="23" x2="7" y2="30"/></g>
-              <g transform="translate(360 30)"><line x1="0" y1="0" x2="0" y2="14"/><rect x="-9" y="14" width="18" height="9" rx="1.5" fill="currentColor" opacity="0.85"/><line x1="-7" y1="23" x2="-7" y2="30"/><line x1="7" y1="23" x2="7" y2="30"/></g>
-              <g transform="translate(620 30)"><line x1="0" y1="0" x2="0" y2="14"/><rect x="-9" y="14" width="18" height="9" rx="1.5" fill="currentColor" opacity="0.85"/><line x1="-7" y1="23" x2="-7" y2="30"/><line x1="7" y1="23" x2="7" y2="30"/></g>
-              <g transform="translate(880 30)"><line x1="0" y1="0" x2="0" y2="14"/><rect x="-9" y="14" width="18" height="9" rx="1.5" fill="currentColor" opacity="0.85"/><line x1="-7" y1="23" x2="-7" y2="30"/><line x1="7" y1="23" x2="7" y2="30"/></g>
-              <g transform="translate(1080 30)"><line x1="0" y1="0" x2="0" y2="14"/><rect x="-9" y="14" width="18" height="9" rx="1.5" fill="currentColor" opacity="0.85"/><line x1="-7" y1="23" x2="-7" y2="30"/><line x1="7" y1="23" x2="7" y2="30"/></g>
-            </g>
-            <g fill="currentColor" opacity="0.7"><circle cx="120" cy="30" r="2"/><circle cx="360" cy="30" r="2"/><circle cx="620" cy="30" r="2"/><circle cx="880" cy="30" r="2"/><circle cx="1080" cy="30" r="2"/></g>
-          </svg>
-        </div>
-        <div class="footer-bottom">
-          <span>&copy; 2026 Fabric Belgium · Made with <span class="heart">❄</span> in Belgium</span>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/company/fabric-belgium/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21.5l-7.5 8.5L22 22h-6.5L11 16.5 5.5 22H2l8-9L2 4h6.5L13 9z"/></svg></a>
-          </div>
+        <div class="footer-base">
+          <span>&copy; 2026 Fabric Belgium</span>
+          <span class="made">Made with <svg class="icon" role="img" aria-label="snow"><use href="../assets/img/icons.svg#i-snowflake"></use></svg> in Belgium</span>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/aurora.js" defer></script>
+    <script src="../assets/js/site.js" defer></script>
   </body>
 </html>
