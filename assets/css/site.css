@@ -518,6 +518,26 @@ h3 { font-size: 1.2rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.0
   .slot-time small { display: inline; margin-left: 10px; }
 }
 
+/* Course outline (Training Bar): numbered modules in parts, with topics and labs */
+.course-intro { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: clamp(40px, 6vw, 56px); }
+.course-intro > div { padding: 26px 30px; background: var(--surface-1); border-radius: var(--r-card); box-shadow: 0 0 0 1px var(--line) inset; }
+.course-intro h3 { margin-bottom: 8px; }
+.course-intro p { margin: 0; color: var(--muted); }
+@media (max-width: 760px) { .course-intro { grid-template-columns: 1fr; } .course-intro > div { padding: 22px 20px; } }
+.course-part { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: 0 0 16px; }
+.schedule + .course-part { margin-top: clamp(40px, 6vw, 56px); }
+.course-part h3 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); letter-spacing: -0.035em; }
+.part-label { margin: 0; font-size: 0.86rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--green); }
+.slot h4 { font-size: 1.25rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.02em; margin-bottom: 8px; }
+.topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 32px; margin: 0 0 18px; max-width: 78ch; }
+.topics li { position: relative; padding-left: 18px; color: var(--ink-soft); line-height: 1.45; }
+.topics li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+@media (max-width: 760px) { .topics { grid-template-columns: 1fr; } }
+.slot .lab { display: inline-flex; align-items: center; gap: 10px; margin: 0; padding: 8px 16px 8px 12px; border-radius: 999px; background: rgba(60, 199, 137, 0.1); box-shadow: 0 0 0 1px rgba(60, 199, 137, 0.35) inset; color: var(--ink); font-weight: 500; font-size: 0.94rem; max-width: 100%; }
+.lab .icon { color: var(--green); }
+.lab strong { margin-right: 6px; font-weight: 600; color: var(--green); }
+.course-source { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin: 24px 0 0; color: var(--muted); }
+
 .abstract { margin-top: 6px; }
 .abstract summary {
   display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 0 14px 0 10px; border-radius: 999px;
