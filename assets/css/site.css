@@ -522,6 +522,11 @@ h3 { font-size: 1.2rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.0
   .slot .slot-time { font-size: 1.7rem; }
   .slot-time small { display: inline; margin-left: 10px; }
 }
+/* Confirmed sessions whose time is not fixed yet */
+.schedule-note { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 20px; padding: 10px 16px; border-radius: 14px; background: rgba(3, 9, 15, 0.55); box-shadow: 0 0 0 1px var(--line) inset; color: var(--ink-soft); font-size: 0.94rem; }
+.schedule-note .icon { flex: none; color: var(--green); }
+.slot .slot-time--tbc { font-size: 1.15rem; letter-spacing: -0.02em; line-height: 1.2; color: var(--ink-soft); }
+@media (min-width: 641px) { .slot--tba .slot-time--tbc small { display: block; margin: 6px 0 0; } }
 
 /* Course outline (Training Bar): numbered modules in parts, with topics and labs */
 .course-intro { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: clamp(40px, 6vw, 56px); }
